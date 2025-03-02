@@ -32,7 +32,6 @@ class MainActivity : ComponentActivity() {
                         ) { backStackEntry ->
                             val productId = backStackEntry.arguments?.getInt("productId")
                             if (productId != null) {
-                               // ProductDetailScreen(productId, navController)
                                 ProductDetailScreen(productId) { navController.popBackStack() }
 
                             }
